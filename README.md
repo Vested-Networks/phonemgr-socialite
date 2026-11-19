@@ -73,10 +73,9 @@ composer test
 
 ## Releasing
 
-Add a section for the version to `CHANGELOG.md`, then push a tag such as `v0.1.2`. The publish
-workflow asks Packagist to re-read the repository and creates the GitHub release from that section.
-It needs the repo secrets `PACKAGIST_USERNAME` and `PACKAGIST_TOKEN` (from
-https://packagist.org/profile/).
+Add a section for the version to `CHANGELOG.md`, then push a tag such as `v0.1.2`. Packagist picks
+up the tag through its GitHub webhook, and the `Release` workflow creates the GitHub release from
+that section.
 
 ## License
 

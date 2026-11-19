@@ -2,7 +2,23 @@
     "name": "vested-networks/phonemgr-socialite",
     "description": "Sign in with Phone Manager: a Socialite driver for Phone Manager's OpenID Connect provider, and verification of its provisioning tokens.",
     "type": "library",
-    "license": "proprietary",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "socialite",
+        "openid-connect",
+        "oidc",
+        "phone-manager",
+        "vested-networks"
+    ],
+    "homepage": "https://github.com/Vested-Networks/phonemgr-socialite",
+    "authors": [
+        {
+            "name": "Werner Garcia",
+            "email": "wgarcia@vestednetworks.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^8.3",
         "firebase/php-jwt": "^7.0",
@@ -34,5 +50,8 @@
         "test": "phpunit"
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
 }

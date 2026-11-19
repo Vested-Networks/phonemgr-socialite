@@ -6,14 +6,6 @@ signs when it calls the app's provisioning API.
 
 ## Install
 
-The package is not on Packagist. Add the repository, then require it:
-
-```json
-"repositories": [
-    { "type": "vcs", "url": "https://github.com/Vested-Networks/phonemgr-socialite" }
-]
-```
-
 ```bash
 composer require vested-networks/phonemgr-socialite
 ```
@@ -78,3 +70,14 @@ It accepts only an RS256 token signed with a key from Phone Manager's JWKS, with
 composer install
 composer test
 ```
+
+## Releasing
+
+Add a section for the version to `CHANGELOG.md`, then push a tag such as `v0.1.2`. The publish
+workflow asks Packagist to re-read the repository and creates the GitHub release from that section.
+It needs the repo secrets `PACKAGIST_USERNAME` and `PACKAGIST_TOKEN` (from
+https://packagist.org/profile/).
+
+## License
+
+MIT. See [LICENSE](LICENSE).
